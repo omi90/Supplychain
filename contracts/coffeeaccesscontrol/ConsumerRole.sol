@@ -5,7 +5,7 @@ import "./Roles.sol";
 
 // Define a contract 'ConsumerRole' to manage this role - add, remove, check
 contract ConsumerRole {
-
+  using Roles for Roles.Role;
   // Define 2 events, one for Adding, and other for Removing
   event consumerAdded(address indexed account);
   event consumerRemoved(address indexed account);
